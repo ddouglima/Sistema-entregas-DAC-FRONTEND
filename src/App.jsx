@@ -10,7 +10,7 @@ import DashboardPage from './pages/DashboardPage';
 // Importações dos Cadastros (CRUDs)
 import UsuarioListPage from './pages/UsuarioListPage';
 import PessoaListPage from './pages/PessoaListPage';
-import EntregaListPage from './pages/EntregaListPage';
+// import EntregaListPage from './pages/EntregaListPage';
 
 import UsuarioNovoPage from './pages/UsuarioNovoPage';
 import UsuarioEditarPage from './pages/UsuarioEditarPage';
@@ -49,7 +49,7 @@ function App() {
             <Route path="/pessoas/editar/:id" element={<PessoaEditarPage />} /> 
 
             {/* Cadastro 3: Entregas (A SER IMPLEMENTADO) */}
-            <Route path="/entregas" element={<EntregaListPage />} />
+            {/* <Route path="/entregas" element={<EntregaListPage />} /> */}
 
           </Route>
           {/* ---------------------------------------------------- */}
