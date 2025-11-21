@@ -36,13 +36,48 @@ function UsuarioCadastroPage() {
       <h2>Cadastrar Novo Usuário</h2>
       <form onSubmit={handleSubmit}>
         {/* Campos do formulário */}
-        {/* ... */}
-        <button type="submit">Cadastrar</button>
-      </form>
-      {mensagem && <p>{mensagem}</p>}
-      <button type="button" onClick={() => navigate('/')}>Voltar para o Login</button>
-    </div>
-  );
+        <div>
+          <label htmlFor="nome">Nome:</label>
+          <input 
+            type="text" 
+            id="nome" 
+            name="nome"
+            value={formData.nome}
+            onChange={handleChange}
+            required 
+          />
+        </div>
+
+        <div>
+          <label htmlFor="login">Login:</label>
+          <input 
+            type="text" 
+            id="login" 
+            name="login"
+            value={formData.login}
+            onChange={handleChange}
+            required 
+          />
+        </div>
+
+        <div>
+          <label htmlFor="senha">Senha:</label>
+          <input 
+            type="password" 
+            id="senha" 
+            name="senha"
+            value={formData.senha}
+            onChange={handleChange}
+            required 
+          />
+        </div>
+        
+        <button type="submit">Cadastrar</button>
+      </form>
+      
+      <button type="button" onClick={() => navigate('/')}>Voltar para o Login</button>
+    </div>
+  );
 }
 
 export default UsuarioCadastroPage;
